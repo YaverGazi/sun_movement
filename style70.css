@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    margin-bottom: 20px;
+    transition: 0.3s linear;
+    position: relative;
+}
+
+.menu{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: -1;
+    position: relative !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,);
+
+}
+
+button{
+    padding: 5px 10px;
+    font-size: 19px;
+    background-color: dodgerblue;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.show{
+    animation: showmenu 5s linear infinite;
+}
+
+@keyframes showmenu{
+    0%{
+       transform: rotate(0deg)translate(200px)rotate(0deg); 
+    }
+
+ 
+    100%{
+        transform: rotate(360deg)translate(200px)rotate(-360deg);
+    }
+}
